@@ -1,0 +1,26 @@
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<title>CURRENCY CONVERTER</title>
+<body>
+<h1>CURRENCY CONVERTER</h1>
+<div class="content">
+    <div class="form">
+        <form action="/currency" method="POST">
+            <label>ENTER THE CHANGE</label>
+            <input type="text" id="money" name="money">
+            <br>
+            <br>
+            <select id="operation" name="operation">
+                <option value="dollar to rupees">DOLLAR TO RUPEES</option>
+                <option value="RUPEES TO DOLLAR">RUPEES TO DOLLAR</option>
+                <option value="RUPEES TO EURO">RUPEES TO EURO</option>
+                <option value="EURO TO RUPEES">EURO TO RUPEES</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="CONVERT">
+        </form>
+    </div>
+</div>
+</body>
+</html>
